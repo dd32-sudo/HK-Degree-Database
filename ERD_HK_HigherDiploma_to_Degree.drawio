@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.3">
+  <diagram name="Page-1" id="gH0Asda7lZaEipJWwuAU">
+    <mxGraphModel dx="1426" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rp4c91NaL0Wya07CgfB4-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Country&#xa;--------&#xa;CountryID (PK)&#xa;CountryName&#xa;PostStudyWorkVisaPolicy&#xa;AverageYearlyLivingCost" vertex="1">
+          <mxGeometry height="180" width="150" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="University&#xa;--------&#xa;UniversityID (PK)&#xa;UniversityName&#xa;QSRanking&#xa;UniversityWebsite&#xa;CountryID (FK)" vertex="1">
+          <mxGeometry height="170" width="120" x="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;CareerProspect&lt;/div&gt;&lt;div&gt;--------&lt;/div&gt;&lt;div&gt;CareerProspectID (PK)&lt;/div&gt;&lt;div&gt;ProgrammeID (FK)&lt;/div&gt;&lt;div&gt;StayChancePercent&lt;/div&gt;&lt;div&gt;StartingSalary&lt;/div&gt;&lt;div&gt;IndustryOutlookScore&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="180" x="580" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Application&lt;/div&gt;&lt;div&gt;--------&lt;/div&gt;&lt;div&gt;ApplicationID (PK)&lt;/div&gt;&lt;div&gt;StudentID (FK)&lt;/div&gt;&lt;div&gt;ProgrammeID (FK)&lt;/div&gt;&lt;div&gt;ApplicationDate&lt;/div&gt;&lt;div&gt;ApplicationStatus&lt;/div&gt;&lt;div&gt;IsApplicationFeePaid&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="170" x="300" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Programme&#xa;--------&#xa;ProgrammeID (PK)&#xa;ProgrammeName&#xa;UniversityID (FK)&#xa;EntryMinGPA&#xa;YearlyTuitionFee&#xa;ApplicationDeadline" vertex="1">
+          <mxGeometry height="200" width="155" x="510" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Student&#xa;--------&#xa;StudentID (PK)&#xa;StudentName&#xa;PhoneNumber&#xa;HD_GPA&#xa;BudgetLimit" vertex="1">
+          <mxGeometry height="160" width="180" x="30" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-13" edge="1" parent="1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rp4c91NaL0Wya07CgfB4-3" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="170" y="200" as="sourcePoint" />
+            <mxPoint x="340" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-14" edge="1" parent="1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;startSize=8;endSize=8;curved=1;" target="rp4c91NaL0Wya07CgfB4-6" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="420" y="200" as="sourcePoint" />
+            <mxPoint x="520" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-15" edge="1" parent="1" source="rp4c91NaL0Wya07CgfB4-6" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.406;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" target="rp4c91NaL0Wya07CgfB4-4" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="510" y="370" as="sourcePoint" />
+            <mxPoint x="540" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-16" edge="1" parent="1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;startSize=8;endSize=8;curved=1;entryX=-0.024;entryY=0.618;entryDx=0;entryDy=0;entryPerimeter=0;" target="rp4c91NaL0Wya07CgfB4-5" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="210" y="610" as="sourcePoint" />
+            <mxPoint x="310" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rp4c91NaL0Wya07CgfB4-17" edge="1" parent="1" source="rp4c91NaL0Wya07CgfB4-6" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;startSize=8;endSize=8;curved=1;entryX=0.847;entryY=-0.024;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.187;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;" target="rp4c91NaL0Wya07CgfB4-5" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="450" y="450" as="sourcePoint" />
+            <mxPoint x="550" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
