@@ -1,6 +1,6 @@
 # HK Higher Diploma Graduates — Overseas Top-up Degree Information System
 
-An MS Access database application designed and built for the ITE3712 Database Applications Development module at IVE.
+An MS Access database application designed 
 
 ## What It Does
 Helps Hong Kong Higher Diploma graduates find overseas top-up degree programmes based on GPA, budget, visa policy, living cost, and career prospects.
